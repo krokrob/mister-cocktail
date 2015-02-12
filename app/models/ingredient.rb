@@ -1,6 +1,6 @@
 class Ingredient < ActiveRecord::Base
   has_many :doses
-  # before_destroy :check_for_doses
+  before_destroy :check_for_doses
   validates :name, presence: true, uniqueness: true
 
   private
