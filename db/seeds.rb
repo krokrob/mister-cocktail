@@ -8,6 +8,15 @@ ingredients_attributes = [
   },
   {
     name:         "mint leaves",
+  },
+  {
+    name:         "rhum",
+  },
+  {
+    name:         "tonic",
+  },
+  {
+    name:         "coca",
   }
 ]
 ingredients_attributes.each { |params| Ingredient.create!(params) }
