@@ -3,7 +3,15 @@
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
         <h1><%= @cocktail.name %></h1>
+        <ul>
+          <% if @cocktail.doses.size > 0 %>
+            <% @cocktail.doses.each do |d| %>
+             <li><%= d.description %> of <%= d.ingredient.name %> <%= link_to "Delete", dose_path(d) %></li>
+            <% end %>
+          <% end %>
+        </ul>
         <%= link_to "Back to list", cocktails_path, class: "btn btn-primary"%>
+        <%= link_to "Add dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary"%>
       </div>
     </div>
   </div>

@@ -4,5 +4,4 @@ class Dose < ActiveRecord::Base
   validates :description, presence: true
   validates :ingredient, presence: true, allow_nil: false
   validates :cocktail, presence: true, allow_nil: false
-  validates :cocktail, :ingredient, uniqueness: true
 end
