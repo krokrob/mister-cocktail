@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+# Gemfile
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+
+# If you want Bootstrap support on form_for
+gem 'bootstrap_form'
+
 ruby '2.2.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
