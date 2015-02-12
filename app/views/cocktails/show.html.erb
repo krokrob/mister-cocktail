@@ -6,7 +6,7 @@
         <ul>
           <% if @cocktail.doses.size > 0 %>
             <% @cocktail.doses.each do |d| %>
-             <li><%= d.description %> of <%= d.ingredient.name %> <%= link_to "Delete", dose_path(d) %></li>
+             <li><%= d.description %> of <%= d.ingredient.name %> <%= link_to "Delete", dose_path(d), method: :delete, data: { confirm: "Are you sure?" } %></li>
             <% end %>
           <% end %>
         </ul>
