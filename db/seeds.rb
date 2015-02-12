@@ -16,6 +16,21 @@ ingredients_attributes = [
     name:         "tonic",
   },
   {
+    name:         "orange juice",
+  },
+  {
+    name:         "vodka",
+  },
+  {
+    name:         "gin",
+  },
+  {
+    name:         "whisky",
+  },
+  {
+    name:         "tequila",
+  },
+  {
     name:         "coca",
   }
 ]
