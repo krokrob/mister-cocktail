@@ -60,3 +60,8 @@ group :development, :test do
 end
 
 gem 'rspec-rails', group: [ :test ]
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
