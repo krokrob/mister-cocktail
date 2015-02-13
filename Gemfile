@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
+# Security
+gem 'figaro'
+
 # Gemfile
-gem 'bootstrap-sass'
-gem 'font-awesome-sass'
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'font-awesome-sass', '~> 4.2.0'
+gem 'simple_form'
 
 # If you want Bootstrap support on form_for
 gem 'bootstrap_form'
