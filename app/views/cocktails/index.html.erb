@@ -4,9 +4,14 @@
       <div class="col-md-4 col-md-offset-4">
         <h1>Cocktails' list</h1>
         <%= link_to "NEW", new_cocktail_path, class: "btn btn-primary"%>
-        <% @cocktails.each do |c| %>
-          <li><h3><%= c.name %></h3><%= link_to "See details", c, class: "btn btn-primary"%></li>
-        <% end %>
+        <ul class='list-unstyled'>
+          <% @cocktails.each do |c| %>
+            <li>
+              <h3><%= c.name %></h3>
+              <%= image_tag c.picture.url(:thumb) %><%= link_to "See details", c, class: "btn btn-primary btn-xs"%>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>

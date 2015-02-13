@@ -2,11 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
-        <%= bootstrap_form_for([@cocktail, @dose]) do |f| %>
-          <%= f.text_area :description %>
+        <%= simple_form_for([@cocktail, @dose]) do |f| %>
+          <%= f.error_notification %>
+          <%= f.input :description %>
           <%= f.select :ingredient_id,
             Ingredient.all.map { |ingredient| [ingredient.name, ingredient.id] } %>
-          <%= f.submit "Add doses!", class: "btn btn-primary" %>
+          <%= f.submit "Add doses!", class: "btn btn-primary btn-sm" %>
         <% end %>
       </div>
     </div>
