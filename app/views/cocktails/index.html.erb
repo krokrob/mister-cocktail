@@ -8,7 +8,7 @@
           <% @cocktails.each do |c| %>
             <li>
               <h3><%= c.name %></h3>
-              <%= image_tag c.picture.url(:thumb) %><%= link_to "See details", c, class: "btn btn-primary btn-xs"%>
+              <%= image_tag c.picture.url(:thumb) %> <%= link_to "See details", c, class: "btn btn-primary btn-xs"%>
             </li>
           <% end %>
         </ul>
